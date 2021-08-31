@@ -1,22 +1,23 @@
 import React from 'react';
 import Proyect from '../Proyect';
+import "./styles.scss"
 
 class Proyects extends React.Component {
     render() {
       
         return(
 
-           <React.Fragment>
-               <p>Projects</p>
+           <div className="proyects">
+               <p >Projects</p>
                <ul>
                {this.props.repos.map((repo, key) => {
                    return (
-                       <Proyect key={key} id={key} repo={repo} />
+                       <Proyect key={key} id={key} repo={repo} /> //id={key} es para poder pasarlo
                    )
 
                })}
                </ul> 
-           </React.Fragment>
+           </div>
         )
     }
 }

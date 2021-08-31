@@ -1,4 +1,5 @@
 import React from 'react';
+import "./styles.scss"
 
 class Info extends React.Component {
     render() {
@@ -6,9 +7,9 @@ class Info extends React.Component {
         const {profilePic, bio} = this.props
 
         return (
-            <div>
-                <img src={profilePic} />
-                <p>{bio}</p>
+            <div className="info">
+                <img className="img" src={profilePic} />
+                <p className="bio">{bio}</p>
             </div>
         )
     }

@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from './styles.css'
+import styles from './styles.scss'
 class Navbar extends React.Component {
 
     render() {
@@ -7,7 +7,7 @@ class Navbar extends React.Component {
 
         return(
             <nav>
-            <h1>Startup Argentina</h1>
+            <h1 className="title">Startup Argentina</h1>
             <p>{name}</p>
             </nav>
         )
